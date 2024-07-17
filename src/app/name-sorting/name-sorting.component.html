@@ -1,0 +1,35 @@
+<div class="sorting-container">
+    <div class="inner-container">
+        <h1 class="title-txt">Sorting the Names</h1>
+        <textarea type="number" class="text-box" placeholder="Enter the names for sorting" [(ngModel)]="names"
+            rows=4></textarea>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-4">
+                <button (click)="sort()" class="btn btn-primary sort-btn">Sort</button>
+            </div>
+            <div class="col-lg-4">
+                <button (click)="clear()"  class="btn btn-primary sort-btn">Clear</button>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center mt-4">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div>
+                    <h5>Ascending Order of the Names</h5>
+                    <hr />
+                    <ul class="sorted-names">
+                        <li *ngFor="let name of sortedNames">{{name}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div>
+                    <h5>Descending Order of the Names</h5>
+                    <hr />
+                    <ul  class="sorted-names">
+                        <li *ngFor="let name of desSortedNames">{{name}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

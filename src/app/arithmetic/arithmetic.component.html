@@ -1,0 +1,25 @@
+<div class="arithmetic-container">
+    <div class="inner-container">
+        <h1 class="title-txt">Arithmetic Operations</h1>
+        <input type="number" class="text-box" placeholder="Enter the first number" [(ngModel)]="fnum" required />
+        <input type="number" class="text-box" placeholder="Enter the second number" [(ngModel)]="snum" required />
+        <div class="row d-flex align-items-center justify-content-center mt-3">
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <button (click)="add()" class="btn btn-primary operation-btn">+</button>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <button (click)="sub()" class="btn btn-primary operation-btn">-</button>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <button (click)="mul()" class="btn btn-primary operation-btn">*</button>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <button (click)="div()" class="btn btn-primary operation-btn">/</button>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <button (click)="mod()" class="btn btn-primary operation-btn">%</button>
+            </div>
+        </div>
+        <input type="number" class="text-box" placeholder="Your answer is" [(ngModel)]="res" required />
+    </div>
+</div>

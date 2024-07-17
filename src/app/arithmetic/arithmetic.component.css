@@ -1,0 +1,36 @@
+.arithmetic-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.inner-container{
+    width: 50%;
+    background-color: bisque;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.text-box{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 70, 9, 0.874);
+    padding: 15px;
+    color: rgba(255, 70, 9, 0.874);
+    font-size: 23px;
+}
+
+.operation-btn{
+    width: 100px;
+    font-weight: 900;
+    height: 50px;
+    font-family: emoji;
+}
+
+.title-txt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
