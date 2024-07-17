@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./thumbs-demo.component.css']
 })
 export class ThumbsDemoComponent {
-  changeImg(){
+  changeImg() {
     var img = document.getElementById("thumbsImg") as HTMLImageElement;
-    img.style.transform= 'rotate(180deg)';
+    if (img.style.transform === 'rotate(180deg)') {
+      img.style.transform = 'rotate(0deg)';
+    }
+    else {
+      img.style.transform = 'rotate(180deg)';
+    }
   }
 
 }
