@@ -4,12 +4,17 @@ import { ArithmeticComponent } from './arithmetic/arithmetic.component';
 import { NameSortingComponent } from './name-sorting/name-sorting.component';
 import { AppComponent } from './app.component';
 import { ThumbsDemoComponent } from './thumbs-demo/thumbs-demo.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const routes: Routes = [
   {
-    path:"",
-    component:AppComponent
-  },
+    path: '', 
+    redirectTo: '/', 
+    pathMatch: 'full'
+   },
+  { 
+    path: '', 
+    component: NavigationComponent },
   {
     path:"arithmetic",
     component:ArithmeticComponent

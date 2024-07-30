@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ArithmeticComponent } from './arithmetic/arithmetic.component';
 import { NameSortingComponent } from './name-sorting/name-sorting.component';
 import { ThumbsDemoComponent } from './thumbs-demo/thumbs-demo.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArithmeticComponent,
     NameSortingComponent,
-    ThumbsDemoComponent
+    ThumbsDemoComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
